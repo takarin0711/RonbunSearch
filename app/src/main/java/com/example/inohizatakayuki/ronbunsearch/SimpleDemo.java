@@ -12,7 +12,7 @@ import edu.cmu.lti.jawjaw.pobj.POS;
  */
 
 public class SimpleDemo {
-    private static void run( String word, POS pos ) {
+    public static void run( String word, POS pos ) {
         // ファサードから日本語 WordNet にアクセス
         Set<String> hypernyms = JAWJAW.findHypernyms(word, pos);
         Set<String> hyponyms = JAWJAW.findHyponyms(word, pos);
